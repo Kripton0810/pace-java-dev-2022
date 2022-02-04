@@ -12,17 +12,39 @@ public class Day4 {
         // System.out.println("stage 4 pass");
         // } else if (a > 50) {
         // System.out.println("stage 5 pass");
+        // // }
+        // @Kripton0810
+        // int price = 0;
+        // if (dis <= 5) {
+        // price = 100;
+        // } else if (dis <= 15) {
+        // price = 100 + (dis - 5) * 10;
+        // } else if (dis <= 25) {
+        // price = 100 + 100 + (dis - 15) * 8;
+        // } else {
+        // price = 100 + 100 + 80 + (dis - 25) * 5;
         // }
-        int price = 0;
-        if (dis <= 5) {
-            price = 100;
-        } else if (dis <= 15) {
-            price = 100 + (dis - 5) * 10;
-        } else if (dis <= 25) {
-            price = 100 + 100 + (dis - 15) * 8;
+        // System.out.println(price);
+        // @Kripton0810
+        int a = 10, b = 14, c = 2;
+        // if ((a + b > c) && (c + b > a) && (a + c > b)) {
+        // System.out.println("It can form a triangle");
+
+        // } else {
+        // System.out.println("no it can't form a triangle");
+        // }
+        if (a > b) {
+            if (a > c) {
+                System.out.println(a);
+            } else {
+                System.out.println(c);
+            }
         } else {
-            price = 100 + 100 + 80 + (dis - 25) * 5;
+            if (b > c) {
+                System.out.println(b);
+            } else {
+                System.out.println(c);
+            }
         }
-        System.out.println(price);
     }
 }
