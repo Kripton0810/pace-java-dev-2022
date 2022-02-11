@@ -2,29 +2,18 @@ import java.util.*;
 
 public class helloworld {
 
-    public static void main(String[] args){
-        Scanner subhankar =  new Scanner(System.in);
-        double pi = 22+7.0;//type casting
-        System.out.println("The value of pi is "+pi);
+    public static void main(String[] args) {
+        Scanner palak = new Scanner(System.in);
+        System.out.println("Enter the number");
+        char n;
+        n = palak.next().charAt(0);
+        System.out.println("You entered " + n);
+        // Float.parseFloat(s)
+        // Long.parseLong(s)
+
         /*
-        Proiroty level
-            Double
-            Long
-            Float
-            Int
-            Char
-            Short
-            byte
-            ...
-            k = i+f*c-f/l;
-        */
-        /*  
-        Error
-        1) Compile Time error / syntax error
-        2) Runtime error
-        3) Logical Error
-        */
-
-
+         * "12435"-> int ok
+         * "ad4sdfw"-> XX error throw
+         */
     }
 }
