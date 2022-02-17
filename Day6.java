@@ -66,26 +66,33 @@ public class Day6 {
 
         // }
 
-        int i = 1, c = 0, check = 0;
-        while (true) {
+        // int i = 1, c = 0, check = 0;
+        // while (true) {
 
-            c = 0;
-            for (int j = 1; j <= i; j++) {
-                if (i % j == 0) {
-                    c++;
-                }
-            }
-            if (c == 2) {
-                System.out.println(i);
-                check++;
+        // c = 0;
+        // for (int j = 1; j <= i; j++) {
+        // if (i % j == 0) {
+        // c++;
+        // }
+        // }
+        // if (c == 2) {
+        // System.out.println(i);
+        // check++;
 
-            }
-            if (check == 30) {
-                break;
-            }
+        // }
+        // if (check == 30) {
+        // break;
+        // }
 
-            i++;
-        }
+        // i++;
+        // }
+        /*
+                *
+               ***
+              *****
+             *******
+            *********
+        */
 
     }
 }
