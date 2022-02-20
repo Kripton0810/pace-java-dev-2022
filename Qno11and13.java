@@ -13,6 +13,7 @@ public class Qno11and13 {
         list.add(13);
         list.add(18);
         list.add(91);
+        System.out.println(list.hashCode());
         // for (Object object : list) {
         // System.out.println((int) object);
         // }
@@ -29,7 +30,7 @@ public class Qno11and13 {
         list2.add(6);
         list2.add(8);
 
-        System.out.println(list2.tailSet(4));
+        System.out.println(list2.hashCode());
     }
 
 }
