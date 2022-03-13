@@ -12,6 +12,5 @@ public class Pattern2 {
         int a=10,b=25;
         int c = b<<2;
         System.out.println(c);
-        
     }   
 }

@@ -16,15 +16,15 @@ class Employee
 class Values
 {
     public int a=15,b=30;
-    // public Values()
-    // {
-    //     System.out.println("Hello i am constructor");
-    // }
-    // public Values(int a,int b)
-    // {
-    //     this.a = a;
-    //     this.b = b;
-    // }
+    public Values()
+    {
+        System.out.println("Hello i am constructor");
+    }
+    public Values(int a,int b)
+    {
+        this.a = a;
+        this.b = b;
+    }
     // void callMe(int c,int d)
     // {
     //     System.out.println("I am 1");
@@ -46,11 +46,15 @@ class Values
     {
         System.out.println("I am 2");
     }
-    // void show(int a)
-    // {
-    //     System.out.println(a);
-    //     System.out.println(this.a);
-    // }
+    void show()
+    {
+        System.out.println(this.a+"::"+this.b);
+    }
+    @Override
+    protected void finalize()  {
+        System.out.println("I am cleaned");
+    }
+
 }
 public class Polymor {
     public static void main(String[] args) {
@@ -59,6 +63,10 @@ public class Polymor {
         // obj.sum();
         // // int k =  ;
         Values val = new Values();
+        val.show();
+        Polymor obj = new Polymor();
+        System.out.println(obj.hashCode());
+        System.gc();
         // val.callMe(10, 20);
         // val.show(10);
         // val.a = 10;
@@ -104,4 +112,9 @@ public class Polymor {
     //     obj.b=c;
     //     System.out.println("The val of a is "+obj.a+" the value of b is "+obj.b);
     // }
+    @Override
+    protected void finalize()  {
+        System.out.println("I am cleaned");
+    }
+
 }
