@@ -1,5 +1,7 @@
 package Pkg1;
 
+import java.util.*;
+
 public class Grade {
     char grade;
     int marks;

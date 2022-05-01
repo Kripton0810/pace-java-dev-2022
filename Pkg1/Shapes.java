@@ -35,12 +35,28 @@ class Rectriangle implements Shape
     {
         return this.color;
     }
+
 }
 
 public class Shapes {
+
     public static void main(String[] args) {
-        Shape obj = new Rectriangle();
-        obj.setAngle("Rectriangle");
-        System.out.println(obj.getShape());
+        // Shape obj = new Rectriangle();
+        // obj.setAngle("Rectriangle");
+        // Shapes s = new Shapes();
+        // System.out.println(s.hashCode());
+        // s = null;
+        // System.out.println(obj.getShape());
+        // System.gc();
+        String str = "I love my india";
+        StringBuffer bfr = new StringBuffer(str);
+        bfr.insert(10, "country ");
+        System.out.println(bfr);
+    }
+    
+    @Override
+    protected void finalize(){
+        
+        System.out.println("Program ends");
     }
 }
